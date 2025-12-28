@@ -6,11 +6,11 @@ export const Footer = () => {
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-muted-foreground text-sm">
-            © {new Date().getFullYear()} Portfolio. All rights reserved.
+            © {new Date().getFullYear()} Deepesh Kumar. All rights reserved.
           </p>
 
           <p className="text-muted-foreground text-sm">
-            Designed & Developed with passion
+            Jaipur, Rajasthan
           </p>
         </div>
       </div>

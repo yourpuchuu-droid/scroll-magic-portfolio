@@ -13,7 +13,7 @@ export const About = () => {
 
   const y = useTransform(scrollYProgress, [0, 1], [100, -100]);
 
-  const words = "I design and develop digital experiences that blend aesthetics with functionality, creating memorable journeys that inspire and engage.".split(" ");
+  const words = "I create impactful graphic designs and visual materials that capture attention and communicate brand messages effectively. Based in Jaipur, Rajasthan.".split(" ");
 
   return (
     <section
@@ -56,9 +56,9 @@ export const About = () => {
               className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8"
             >
               {[
-                { number: "50+", label: "Projects Completed" },
-                { number: "8+", label: "Years Experience" },
-                { number: "30+", label: "Happy Clients" },
+                { number: "2+", label: "Years Experience" },
+                { number: "50+", label: "Designs Created" },
+                { number: "10+", label: "Happy Clients" },
               ].map((stat, index) => (
                 <motion.div
                   key={stat.label}

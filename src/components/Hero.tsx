@@ -15,7 +15,7 @@ export const Hero = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-muted-foreground text-sm md:text-base tracking-widest uppercase mb-6"
           >
-            Creative Designer & Developer
+            Graphic Designer
           </motion.p>
 
           <div className="overflow-hidden">
@@ -25,7 +25,7 @@ export const Hero = () => {
               transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.3 }}
               className="text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-display font-medium leading-[0.9] tracking-tight"
             >
-              Crafting
+              Deepesh
             </motion.h1>
           </div>
 
@@ -36,7 +36,7 @@ export const Hero = () => {
               transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.4 }}
               className="text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-display font-medium leading-[0.9] tracking-tight text-stroke"
             >
-              Digital
+              Kumar
             </motion.h1>
           </div>
 
@@ -47,7 +47,7 @@ export const Hero = () => {
               transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.5 }}
               className="text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-display font-medium leading-[0.9] tracking-tight"
             >
-              Experiences
+              Designer
             </motion.h1>
           </div>
 
@@ -57,7 +57,7 @@ export const Hero = () => {
             transition={{ duration: 0.8, delay: 0.8 }}
             className="mt-12 max-w-md text-muted-foreground text-lg leading-relaxed"
           >
-            Transforming ideas into immersive digital experiences through thoughtful design and innovative development.
+            Experienced graphics designer specializing in impactful visuals. Passionate about high-quality work and continuous improvement.
           </motion.p>
         </div>
       </div>

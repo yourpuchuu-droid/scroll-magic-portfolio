@@ -5,27 +5,27 @@ import { ArrowUpRight } from "lucide-react";
 const services = [
   {
     number: "01",
-    title: "Brand Identity",
+    title: "Graphic Design",
     description:
-      "Creating distinctive visual identities that capture the essence of your brand and resonate with your audience.",
+      "Creating impactful graphic art and visual materials for promotions using professional design software.",
   },
   {
     number: "02",
-    title: "Web Design",
+    title: "Brand & Visual Identity",
     description:
-      "Designing intuitive and visually stunning websites that deliver exceptional user experiences.",
+      "Developing creative and informative graphics that meet client requirements with appropriate colors and techniques.",
   },
   {
     number: "03",
-    title: "UI/UX Design",
+    title: "Social Media Graphics",
     description:
-      "Crafting seamless user interfaces and experiences that balance beauty with functionality.",
+      "Researching and creating engaging social media visuals and multimedia programs that capture attention.",
   },
   {
     number: "04",
-    title: "Development",
+    title: "Data Entry & Organization",
     description:
-      "Building robust and scalable digital solutions using modern technologies and best practices.",
+      "Managing data tasks in high-volume environments with precision, investigating and correcting data quality issues.",
   },
 ];
 

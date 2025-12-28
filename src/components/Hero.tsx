@@ -69,12 +69,13 @@ export const Hero = () => {
             transition={{ duration: 1, delay: 0.6 }}
             className="relative flex-shrink-0"
           >
-            <div className="relative">
+            <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
               <img
                 src={heroImage}
                 alt="Deepesh Kumar - Graphic Designer"
-                className="w-64 md:w-80 lg:w-96 h-auto object-cover grayscale"
+                className="w-full h-full object-cover object-top rounded-full grayscale"
               />
+              <div className="absolute inset-0 rounded-full border border-border/20" />
             </div>
           </motion.div>
         </div>

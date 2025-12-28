@@ -66,11 +66,26 @@ export const Contact = () => {
               className="mt-16"
             >
               <a
-                href="mailto:hello@portfolio.design"
+                href="mailto:Deepeshdesignss@gmail.com"
                 className="group inline-flex items-center gap-4 text-xl md:text-2xl lg:text-3xl border-b border-background/30 pb-2 hover:border-background transition-colors duration-300"
               >
-                hello@portfolio.design
+                Deepeshdesignss@gmail.com
                 <ArrowUpRight className="w-6 h-6 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
+              </a>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={isInView ? { opacity: 1 } : {}}
+              transition={{ duration: 0.6, delay: 0.6 }}
+              className="mt-8"
+            >
+              <a
+                href="tel:+916350396806"
+                className="group inline-flex items-center gap-4 text-lg md:text-xl border-b border-background/30 pb-2 hover:border-background transition-colors duration-300"
+              >
+                +91 6350396806
+                <ArrowUpRight className="w-5 h-5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
               </a>
             </motion.div>
 
@@ -80,18 +95,14 @@ export const Contact = () => {
               transition={{ duration: 0.6, delay: 0.7 }}
               className="mt-16 flex flex-wrap gap-6"
             >
-              {["Twitter", "LinkedIn", "Dribbble", "Behance"].map((social) => (
-                <a
-                  key={social}
-                  href="#"
-                  className="text-background/60 hover:text-background text-sm tracking-wide transition-colors duration-300 line-reveal py-1"
-                  style={{
-                    backgroundImage: "linear-gradient(to right, currentColor, currentColor)",
-                  }}
-                >
-                  {social}
-                </a>
-              ))}
+              <a
+                href="https://www.linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-background/60 hover:text-background text-sm tracking-wide transition-colors duration-300 py-1"
+              >
+                LinkedIn
+              </a>
             </motion.div>
           </div>
         </div>

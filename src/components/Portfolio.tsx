@@ -1,43 +1,13 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { ProjectCard } from "./ProjectCard";
-import project1 from "@/assets/project-1.jpg";
-import project2 from "@/assets/project-2.jpg";
-import project3 from "@/assets/project-3.jpg";
-import project4 from "@/assets/project-4.jpg";
-import project5 from "@/assets/project-5.jpg";
-import project6 from "@/assets/project-6.jpg";
+import businessCard1 from "@/assets/business-card-1.png";
 
 const projects = [
   {
-    title: "Forma Studio",
-    category: "Brand & Experience Landing Page",
-    image: project1,
-  },
-  {
-    title: "Obscura",
-    category: "Brand & Experience Landing Page",
-    image: project2,
-  },
-  {
-    title: "Bread Me!",
-    category: "Brand & Experience Landing Page",
-    image: project3,
-  },
-  {
-    title: "Lumière",
-    category: "Premium Boutique Landing",
-    image: project4,
-  },
-  {
-    title: "Premiere Estate",
-    category: "High-End Property Showcase",
-    image: project5,
-  },
-  {
-    title: "Essence Gastronomy",
-    category: "Brand & Experience Landing Page",
-    image: project6,
+    title: "Botanical Business Card",
+    category: "Brand Identity Design",
+    image: businessCard1,
   },
 ];
 

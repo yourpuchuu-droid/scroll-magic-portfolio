@@ -8,49 +8,49 @@
 @layer base {
   :root {
     --background: 38 40% 94%;
-    --foreground: 25 20% 12%;
+    --foreground: 28 35% 18%;
 
     --card: 38 35% 92%;
-    --card-foreground: 25 20% 12%;
+    --card-foreground: 28 35% 18%;
 
     --popover: 38 40% 94%;
-    --popover-foreground: 25 20% 12%;
+    --popover-foreground: 28 35% 18%;
 
-    --primary: 25 20% 12%;
+    --primary: 28 40% 22%;
     --primary-foreground: 38 40% 94%;
 
     --secondary: 35 35% 88%;
-    --secondary-foreground: 25 20% 12%;
+    --secondary-foreground: 28 35% 18%;
 
     --muted: 35 30% 90%;
-    --muted-foreground: 25 15% 40%;
+    --muted-foreground: 30 25% 45%;
 
     --accent: 35 35% 88%;
-    --accent-foreground: 25 20% 12%;
+    --accent-foreground: 28 35% 18%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 38 40% 94%;
 
     --border: 35 25% 82%;
     --input: 35 25% 82%;
-    --ring: 25 20% 12%;
+    --ring: 28 35% 22%;
 
     --radius: 0rem;
 
     --sidebar-background: 38 35% 92%;
-    --sidebar-foreground: 25 20% 12%;
-    --sidebar-primary: 25 20% 12%;
+    --sidebar-foreground: 28 35% 18%;
+    --sidebar-primary: 28 40% 22%;
     --sidebar-primary-foreground: 38 40% 94%;
     --sidebar-accent: 35 30% 88%;
-    --sidebar-accent-foreground: 25 20% 12%;
+    --sidebar-accent-foreground: 28 35% 18%;
     --sidebar-border: 35 25% 82%;
-    --sidebar-ring: 25 20% 12%;
+    --sidebar-ring: 28 35% 22%;
 
-    --chart-1: 25 20% 20%;
-    --chart-2: 30 25% 40%;
-    --chart-3: 35 20% 60%;
-    --chart-4: 38 25% 80%;
-    --chart-5: 38 30% 90%;
+    --chart-1: 28 35% 20%;
+    --chart-2: 30 30% 40%;
+    --chart-3: 35 25% 60%;
+    --chart-4: 38 30% 80%;
+    --chart-5: 38 35% 90%;
 
     --font-display: 'Playfair Display', serif;
     --font-sans: 'Inter', sans-serif;

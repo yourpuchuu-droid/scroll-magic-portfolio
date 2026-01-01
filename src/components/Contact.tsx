@@ -96,7 +96,7 @@ export const Contact = () => {
               className="mt-16 flex flex-wrap gap-6"
             >
               <a
-                href="https://www.linkedin.com"
+                href="https://www.linkedin.com/in/deepesh-kumar-999263261/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-background/60 hover:text-background text-sm tracking-wide transition-colors duration-300 py-1"

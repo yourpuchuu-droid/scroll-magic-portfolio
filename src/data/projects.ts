@@ -55,8 +55,8 @@ export const projects: Project[] = [
     images: [yoga1, yoga2, yoga3, yoga4, yoga5, yoga6, yoga7, yoga8, yoga9, yoga10],
   },
   {
-    slug: "salon-logo-mockups",
-    title: "Salon Logo Mockups",
+    slug: "logo-mockups",
+    title: "Logo Mockups",
     category: "Logo & Brand Identity",
     description:
       "A sophisticated brand identity featuring an elegant gold logo with graceful flowing lines. The design includes premium signage mockups, embossed stationery, and cohesive brand applications that exude refinement and exclusivity.",

@@ -97,20 +97,6 @@ export const Hero = () => {
             className="relative flex-shrink-0"
           >
             <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
-              <motion.div
-                className="absolute inset-0 rounded-full"
-                animate={{
-                  boxShadow: [
-                    "0 0 0 0px hsl(var(--primary) / 0.1)",
-                    "0 0 0 20px hsl(var(--primary) / 0)",
-                  ],
-                }}
-                transition={{
-                  duration: 2,
-                  repeat: Infinity,
-                  ease: "easeOut",
-                }}
-              />
               <motion.img
                 src={heroImage}
                 alt="Deepesh Kumar - Graphic Designer"

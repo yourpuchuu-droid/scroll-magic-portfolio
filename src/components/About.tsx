@@ -48,21 +48,20 @@ export const About = () => {
 
           {/* Main Text */}
           <div ref={textRef} className="lg:col-span-9">
-            <p className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-display font-medium leading-[1.2] tracking-tight">
+            <p className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-display font-medium leading-[1.2] tracking-tight text-foreground">
               {words.map((word, i) => (
                 <motion.span
                   key={i}
-                  initial={{ opacity: 0.2, y: 20 }}
+                  initial={{ opacity: 0.4, y: 20 }}
                   animate={isInView ? { opacity: 1, y: 0 } : {}}
                   transition={{ 
                     duration: 0.5, 
                     delay: i * 0.03,
                     ease: [0.16, 1, 0.3, 1],
                   }}
-                  className="inline-block mr-[0.25em]"
+                  className="inline-block mr-[0.25em] text-foreground"
                   whileHover={{ 
                     scale: 1.05, 
-                    color: "hsl(var(--primary))",
                     transition: { duration: 0.2 }
                   }}
                 >

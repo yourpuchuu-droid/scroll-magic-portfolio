@@ -14,7 +14,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename="/scroll-magic-portfolio">
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/project/:slug" element={<ProjectDetail />} />

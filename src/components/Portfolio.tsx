@@ -1,15 +1,7 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { ProjectCard } from "./ProjectCard";
-import businessCard1 from "@/assets/business-card-1.png";
-
-const projects = [
-  {
-    title: "Botanical Business Card",
-    category: "Brand Identity Design",
-    image: businessCard1,
-  },
-];
+import { projects } from "@/data/projects";
 
 export const Portfolio = () => {
   const headerRef = useRef(null);
@@ -54,11 +46,12 @@ export const Portfolio = () => {
         <div className="space-y-0">
           {projects.map((project, index) => (
             <ProjectCard
-              key={project.title}
+              key={project.slug}
               index={index + 1}
               title={project.title}
               category={project.category}
               image={project.image}
+              href={`/project/${project.slug}`}
             />
           ))}
         </div>

@@ -1,6 +1,7 @@
 import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import { ArrowUpRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 interface ProjectCardProps {
   index: number;
@@ -27,7 +28,7 @@ export const ProjectCard = ({ index, title, category, image, href = "#" }: Proje
       onMouseLeave={() => setIsHovered(false)}
       className="group cursor-pointer"
     >
-      <a href={href} className="block">
+      <Link to={href} className="block">
         <div className="grid grid-cols-12 gap-4 items-center py-8 border-t border-border/50">
           {/* Index Number */}
           <motion.span
@@ -89,7 +90,7 @@ export const ProjectCard = ({ index, title, category, image, href = "#" }: Proje
             <div className="absolute inset-0 bg-foreground/5" />
           </div>
         </motion.div>
-      </a>
+      </Link>
     </motion.article>
   );
 };

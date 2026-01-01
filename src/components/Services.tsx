@@ -34,15 +34,15 @@ export const Services = () => {
   const isHeaderInView = useInView(headerRef, { once: true, margin: "-100px" });
 
   return (
-    <section id="services" className="py-32 px-6 lg:px-12">
+    <section id="services" className="py-16 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-12">
       <div className="container mx-auto">
         {/* Section Header */}
-        <div ref={headerRef} className="mb-16 lg:mb-24">
+        <div ref={headerRef} className="mb-10 sm:mb-16 lg:mb-24">
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={isHeaderInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6 }}
-            className="text-muted-foreground text-sm tracking-widest uppercase mb-4"
+            className="text-muted-foreground text-xs sm:text-sm tracking-widest uppercase mb-3 sm:mb-4"
           >
             What I Do
           </motion.p>
@@ -52,7 +52,7 @@ export const Services = () => {
               initial={{ y: 100 }}
               animate={isHeaderInView ? { y: 0 } : {}}
               transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.1 }}
-              className="text-4xl md:text-6xl lg:text-7xl font-display font-medium tracking-tight"
+              className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-display font-medium tracking-tight"
             >
               Services
             </motion.h2>
@@ -90,12 +90,12 @@ const ServiceItem = ({ number, title, description, index }: ServiceItemProps) =>
       transition={{ duration: 0.6, delay: index * 0.1 }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className="group border-t border-border/50 py-8 lg:py-12 cursor-pointer"
+      className="group border-t border-border/50 py-6 sm:py-8 lg:py-12 cursor-pointer"
     >
-      <div className="grid grid-cols-12 gap-4 items-start lg:items-center">
+      <div className="flex flex-col sm:grid sm:grid-cols-12 gap-3 sm:gap-4 items-start lg:items-center">
         {/* Number */}
         <motion.span
-          className="col-span-2 lg:col-span-1 font-mono text-sm text-muted-foreground"
+          className="font-mono text-xs sm:text-sm text-muted-foreground sm:col-span-2 lg:col-span-1"
           animate={{ 
             x: isHovered ? 10 : 0,
             scale: isHovered ? 1.2 : 1,
@@ -108,7 +108,7 @@ const ServiceItem = ({ number, title, description, index }: ServiceItemProps) =>
 
         {/* Title */}
         <motion.h3
-          className="col-span-10 lg:col-span-4 text-2xl md:text-3xl lg:text-4xl font-display font-medium tracking-tight"
+          className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-display font-medium tracking-tight sm:col-span-10 lg:col-span-4"
           animate={{ 
             x: isHovered ? 20 : 0,
             letterSpacing: isHovered ? "0.02em" : "0em",
@@ -135,7 +135,7 @@ const ServiceItem = ({ number, title, description, index }: ServiceItemProps) =>
 
         {/* Description */}
         <motion.p
-          className="col-span-12 lg:col-span-5 text-muted-foreground mt-4 lg:mt-0 lg:pl-6"
+          className="text-sm sm:text-base text-muted-foreground mt-2 sm:mt-4 lg:mt-0 lg:pl-6 sm:col-span-12 lg:col-span-5"
           animate={{ 
             opacity: isHovered ? 1 : 0.7,
             x: isHovered ? 10 : 0,

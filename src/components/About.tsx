@@ -26,10 +26,10 @@ export const About = () => {
     <section
       id="about"
       ref={containerRef}
-      className="py-32 lg:py-48 px-6 lg:px-12 bg-secondary overflow-hidden"
+      className="py-16 sm:py-24 lg:py-48 px-4 sm:px-6 lg:px-12 bg-secondary overflow-hidden"
     >
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 lg:gap-6">
           {/* Label */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -38,7 +38,7 @@ export const About = () => {
             className="lg:col-span-3"
           >
             <motion.span 
-              className="text-muted-foreground text-sm tracking-widest uppercase inline-block"
+              className="text-muted-foreground text-xs sm:text-sm tracking-widest uppercase inline-block"
               whileHover={{ x: 10, letterSpacing: "0.2em" }}
               transition={{ duration: 0.3 }}
             >
@@ -48,7 +48,7 @@ export const About = () => {
 
           {/* Main Text */}
           <div ref={textRef} className="lg:col-span-9">
-            <p className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-display font-medium leading-[1.2] tracking-tight text-foreground">
+            <p className="text-xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-display font-medium leading-[1.2] tracking-tight text-foreground">
               {words.map((word, i) => (
                 <motion.span
                   key={i}
@@ -72,7 +72,7 @@ export const About = () => {
 
             <motion.div
               style={{ y }}
-              className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8"
+              className="mt-10 sm:mt-16 grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8"
             >
               {stats.map((stat, index) => (
                 <motion.div
@@ -80,14 +80,14 @@ export const About = () => {
                   initial={{ opacity: 0, y: 40 }}
                   animate={isInView ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.6, delay: 0.4 + index * 0.1 }}
-                  className="border-t border-border pt-6 group"
+                  className="border-t border-border pt-4 sm:pt-6 group"
                   whileHover={{ 
                     scale: 1.02,
                     transition: { duration: 0.3 }
                   }}
                 >
                   <motion.div
-                    className="text-4xl md:text-5xl font-display font-medium"
+                    className="text-3xl sm:text-4xl md:text-5xl font-display font-medium"
                     whileHover={{ scale: 1.1 }}
                     transition={{ duration: 0.3 }}
                   >

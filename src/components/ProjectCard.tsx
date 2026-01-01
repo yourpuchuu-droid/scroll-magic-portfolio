@@ -60,10 +60,10 @@ export const ProjectCard = ({ index, title, category, image, href = "#" }: Proje
       className="group cursor-pointer perspective-1000"
     >
       <Link to={href} className="block">
-        <div className="grid grid-cols-12 gap-4 items-center py-8 border-t border-border/50">
+        <div className="grid grid-cols-12 gap-2 sm:gap-4 items-center py-6 sm:py-8 border-t border-border/50">
           {/* Index Number */}
           <motion.span
-            className="col-span-2 md:col-span-1 font-mono text-sm text-muted-foreground"
+            className="col-span-2 md:col-span-1 font-mono text-xs sm:text-sm text-muted-foreground"
             animate={{ 
               x: isHovered ? 10 : 0,
               scale: isHovered ? 1.1 : 1,
@@ -75,7 +75,7 @@ export const ProjectCard = ({ index, title, category, image, href = "#" }: Proje
 
           {/* Title */}
           <motion.h3
-            className="col-span-10 md:col-span-5 text-2xl md:text-4xl lg:text-5xl font-display font-medium tracking-tight"
+            className="col-span-10 md:col-span-5 text-lg sm:text-2xl md:text-4xl lg:text-5xl font-display font-medium tracking-tight"
             animate={{ 
               x: isHovered ? 20 : 0,
               letterSpacing: isHovered ? "0.02em" : "0em",

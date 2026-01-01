@@ -118,7 +118,7 @@ export const Hero = () => {
                 whileHover={{ scale: 1.05, filter: "grayscale(0)" }}
                 transition={{ duration: 0.5 }}
               />
-              <div className="absolute inset-0 rounded-full border border-border/20" />
+              
             </div>
           </motion.div>
         </div>

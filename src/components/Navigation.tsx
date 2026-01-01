@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { ThemeToggle } from "./ThemeToggle";
 
 const navItems = [
   { label: "Home", href: "#home" },
@@ -56,12 +57,15 @@ export const Navigation = () => {
               ))}
             </ul>
 
-            <a
-              href="#contact"
-              className="hidden md:block text-sm border border-foreground/20 px-6 py-2.5 hover:bg-foreground hover:text-background transition-all duration-300"
-            >
-              Get in touch
-            </a>
+            <div className="hidden md:flex items-center gap-4">
+              <ThemeToggle />
+              <a
+                href="#contact"
+                className="text-sm border border-foreground/20 px-6 py-2.5 hover:bg-foreground hover:text-background transition-all duration-300"
+              >
+                Get in touch
+              </a>
+            </div>
 
             {/* Mobile Menu Button */}
             <button
@@ -115,6 +119,13 @@ export const Navigation = () => {
                   {item.label}
                 </motion.a>
               ))}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, delay: 0.35 }}
+              >
+                <ThemeToggle />
+              </motion.div>
             </motion.nav>
           </motion.div>
         )}

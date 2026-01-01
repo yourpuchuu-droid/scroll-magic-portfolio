@@ -55,17 +55,17 @@ export const projects: Project[] = [
     images: [yoga1, yoga2, yoga3, yoga4, yoga5, yoga6, yoga7, yoga8, yoga9, yoga10],
   },
   {
-    slug: "luxe-beauty-branding",
-    title: "Luxe Beauty Branding",
+    slug: "salon-logo-mockups",
+    title: "Salon Logo Mockups",
     category: "Logo & Brand Identity",
     description:
-      "A sophisticated brand identity for a luxury beauty salon featuring an elegant gold logo with graceful flowing lines. The design includes premium signage mockups, embossed stationery, and cohesive brand applications that exude refinement and exclusivity.",
+      "A sophisticated brand identity featuring an elegant gold logo with graceful flowing lines. The design includes premium signage mockups, embossed stationery, and cohesive brand applications that exude refinement and exclusivity.",
     image: logoMockup1,
     images: [logoMockup1, logoMockup2, logoMockup3, logoMockup4, logoMockup5],
   },
   {
-    slug: "milk-meadows-branding",
-    title: "Milk & Meadows",
+    slug: "dairy-product-flyer",
+    title: "Dairy Product Flyer",
     category: "Marketing & Social Media",
     description:
       "A comprehensive marketing design package for an organic dairy brand specializing in A2 Gir Cow milk and traditional Bilona Ghee. The designs feature a rich teal and gold color palette with elegant typography, showcasing premium product photography and authentic brand storytelling.",
@@ -73,11 +73,11 @@ export const projects: Project[] = [
     images: [dairy1, dairy2],
   },
   {
-    slug: "milk-meadows-stationery",
-    title: "Milk & Meadows Stationery",
+    slug: "corporate-letterhead",
+    title: "Corporate Letterhead",
     category: "Corporate Identity",
     description:
-      "A cohesive corporate stationery design for the Milk & Meadows dairy brand featuring elegant letterhead with a soft pink watermark logo. The minimalist design combines coral accents with clean typography for a professional yet approachable brand presence.",
+      "A cohesive corporate stationery design featuring elegant letterhead with a soft pink watermark logo. The minimalist design combines coral accents with clean typography for a professional yet approachable brand presence.",
     image: stationery1,
     images: [stationery1],
   },

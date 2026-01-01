@@ -17,7 +17,7 @@ export const Hero = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-muted-foreground text-sm md:text-base tracking-widest uppercase mb-6"
             >
-              Graphic Designer
+              Graphics Designer & Visual Communication Specialist
             </motion.p>
 
             <div className="overflow-hidden">
@@ -59,7 +59,7 @@ export const Hero = () => {
               transition={{ duration: 0.8, delay: 0.8 }}
               className="mt-12 max-w-md text-muted-foreground text-lg leading-relaxed"
             >
-              Experienced graphics designer specializing in impactful visuals. Passionate about high-quality work and continuous improvement.
+              Creating impactful, high-quality visuals for web and print. Specializing in brand identity, social media layouts, motion graphics, and design systems. Based in Jaipur, Rajasthan.
             </motion.p>
           </div>
 

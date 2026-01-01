@@ -37,47 +37,47 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    slug: "botanical-business-card",
-    title: "Botanical Business Card",
-    category: "Brand Identity Design",
+    slug: "yoga-class-branding",
+    title: "Yoga Class — Brand Identity",
+    category: "Brand Identity",
     description:
-      "An elegant business card design featuring botanical illustrations and a refined floral wreath logo. The design combines teal and cream colors with delicate line art for a sophisticated, nature-inspired brand identity.",
-    image: businessCard1,
-    images: [businessCard1, businessCard2, businessCard3, businessCard4, businessCard5],
-  },
-  {
-    slug: "yoga-class-flyer",
-    title: "Yoga Class Flyer",
-    category: "Print Design",
-    description:
-      "A modern and dynamic flyer design for yoga classes featuring bold typography, organic curved shapes, and striking imagery. The dark color palette with white accents creates a calming yet professional aesthetic perfect for wellness brands.",
+      "Minimalist dark-themed branding package for a yoga studio, featuring integrated typography with yoga pose imagery, class schedule cards, and promotional materials.",
     image: yoga1,
     images: [yoga1, yoga2, yoga3, yoga4, yoga5, yoga6, yoga7, yoga8, yoga9, yoga10],
   },
   {
-    slug: "logo-mockups",
-    title: "Logo Mockups",
-    category: "Logo & Brand Identity",
+    slug: "business-card-design",
+    title: "Business Card — Professional Identity",
+    category: "Print Design",
     description:
-      "A sophisticated brand identity featuring an elegant gold logo with graceful flowing lines. The design includes premium signage mockups, embossed stationery, and cohesive brand applications that exude refinement and exclusivity.",
+      "Elegant and professional business card design with clean typography, sophisticated color palette, and modern layout showcasing brand identity and contact information.",
+    image: businessCard1,
+    images: [businessCard1, businessCard2, businessCard3, businessCard4, businessCard5],
+  },
+  {
+    slug: "technova-logo",
+    title: "TechNova — Logo Design",
+    category: "Logo Design",
+    description:
+      "Modern and dynamic logo design for TechNova featuring sleek typography, innovative iconography, and versatile mockup presentations across various applications.",
     image: logoMockup1,
     images: [logoMockup1, logoMockup2, logoMockup3, logoMockup4, logoMockup5],
   },
   {
-    slug: "dairy-product-flyer",
-    title: "Dairy Product Flyer",
-    category: "Marketing & Social Media",
+    slug: "flyer-design",
+    title: "Flyer Design — Print & Social",
+    category: "Print Design",
     description:
-      "A comprehensive marketing design package for an organic dairy brand specializing in A2 Gir Cow milk and traditional Bilona Ghee. The designs feature a rich teal and gold color palette with elegant typography, showcasing premium product photography and authentic brand storytelling.",
+      "Professional flyer designs created for both print (A4 format) and social media platforms. Featuring eye-catching layouts, compelling visuals, and effective communication design for promotional and marketing purposes.",
     image: dairy1,
     images: [dairy1, dairy2],
   },
   {
-    slug: "corporate-letterhead",
-    title: "Corporate Letterhead",
-    category: "Corporate Identity",
+    slug: "letterhead-design",
+    title: "Letterhead — Professional Stationery",
+    category: "Print Design",
     description:
-      "A cohesive corporate stationery design featuring elegant letterhead with a soft pink watermark logo. The minimalist design combines coral accents with clean typography for a professional yet approachable brand presence.",
+      "Professional letterhead design with integrated business card mockup. Elegant stationery design featuring clean typography, sophisticated layout, and cohesive brand identity for professional correspondence.",
     image: stationery1,
     images: [stationery1],
   },

@@ -5,27 +5,27 @@ import { ArrowUpRight } from "lucide-react";
 const services = [
   {
     number: "01",
-    title: "Graphic Design",
+    title: "Brand Identity",
     description:
-      "Creating impactful graphic art and visual materials for promotions using professional design software.",
+      "Developing creative brand identities with logos, color palettes, and visual systems that communicate your brand's essence effectively.",
   },
   {
     number: "02",
-    title: "Brand & Visual Identity",
+    title: "Print Design",
     description:
-      "Developing creative and informative graphics that meet client requirements with appropriate colors and techniques.",
+      "Creating professional print materials including business cards, flyers, brochures, letterheads, and marketing collateral.",
   },
   {
     number: "03",
-    title: "Social Media Graphics",
+    title: "Motion Graphics",
     description:
-      "Researching and creating engaging social media visuals and multimedia programs that capture attention.",
+      "Designing engaging animated content and motion graphics for social media, presentations, and digital platforms.",
   },
   {
     number: "04",
-    title: "Data Entry & Organization",
+    title: "Social Media",
     description:
-      "Managing data tasks in high-volume environments with precision, investigating and correcting data quality issues.",
+      "Crafting eye-catching social media graphics, posts, and campaign visuals optimized for various platforms.",
   },
 ];
 

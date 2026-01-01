@@ -113,9 +113,8 @@ export const Hero = () => {
           delay: 0.6
         }} className="relative flex-shrink-0">
             <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
-              <motion.img alt="Deepesh Kumar - Graphic Designer" className="w-full h-full object-cover object-top rounded-full grayscale" whileHover={{
-              scale: 1.05,
-              filter: "grayscale(0)"
+              <motion.img alt="Deepesh Kumar - Graphic Designer" className="w-full h-full object-cover object-top rounded-full" whileHover={{
+              scale: 1.05
             }} transition={{
               duration: 0.5
             }} src="/lovable-uploads/7bd7a11b-bb39-4dad-a854-b482b08f7915.png" />

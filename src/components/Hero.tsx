@@ -1,35 +1,14 @@
-import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
 import heroImage from "@/assets/hero-image.png";
-import { MagneticButton, FloatingShapes } from "./animations";
-import { useEffect, useState } from "react";
+import { MagneticButton } from "./animations";
 
 export const Hero = () => {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  
-  const mouseX = useMotionValue(0);
-  const mouseY = useMotionValue(0);
-  
-  const springConfig = { damping: 50, stiffness: 100 };
-  const parallaxX = useSpring(useTransform(mouseX, [0, 1], [-20, 20]), springConfig);
-  const parallaxY = useSpring(useTransform(mouseY, [0, 1], [-20, 20]), springConfig);
-
-  useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) => {
-      mouseX.set(e.clientX / window.innerWidth);
-      mouseY.set(e.clientY / window.innerHeight);
-    };
-    
-    window.addEventListener("mousemove", handleMouseMove);
-    return () => window.removeEventListener("mousemove", handleMouseMove);
-  }, [mouseX, mouseY]);
-
   return (
     <section
       id="home"
       className="relative min-h-screen flex flex-col justify-center px-6 lg:px-12 pt-24 overflow-hidden"
     >
-      <FloatingShapes />
       
       <div className="container mx-auto relative z-10">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
@@ -116,7 +95,6 @@ export const Hero = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.6 }}
             className="relative flex-shrink-0"
-            style={{ x: parallaxX, y: parallaxY }}
           >
             <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
               <motion.div

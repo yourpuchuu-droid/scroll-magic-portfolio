@@ -1,5 +1,5 @@
-import { motion, useInView, useScroll, useTransform, useSpring, useMotionValue } from "framer-motion";
-import { useRef, useEffect } from "react";
+import { motion, useInView, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
 import { AnimatedCounter } from "./animations";
 
 export const About = () => {
@@ -13,24 +13,6 @@ export const About = () => {
   });
 
   const y = useTransform(scrollYProgress, [0, 1], [100, -100]);
-  
-  // Mouse parallax for stats
-  const mouseX = useMotionValue(0.5);
-  const mouseY = useMotionValue(0.5);
-  
-  const springConfig = { damping: 50, stiffness: 100 };
-  const statX = useSpring(useTransform(mouseX, [0, 1], [-10, 10]), springConfig);
-  const statY = useSpring(useTransform(mouseY, [0, 1], [-10, 10]), springConfig);
-
-  useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) => {
-      mouseX.set(e.clientX / window.innerWidth);
-      mouseY.set(e.clientY / window.innerHeight);
-    };
-    
-    window.addEventListener("mousemove", handleMouseMove);
-    return () => window.removeEventListener("mousemove", handleMouseMove);
-  }, [mouseX, mouseY]);
 
   const words = "I'm a Visual Communication-driven graphics designer focused on clean, communicative visuals for web and print. Passionate about motion graphics, social layouts, and design systems. Based in Jaipur, Rajasthan.".split(" ");
 
@@ -100,7 +82,6 @@ export const About = () => {
                   animate={isInView ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.6, delay: 0.4 + index * 0.1 }}
                   className="border-t border-border pt-6 group"
-                  style={{ x: statX, y: statY }}
                   whileHover={{ 
                     scale: 1.02,
                     transition: { duration: 0.3 }

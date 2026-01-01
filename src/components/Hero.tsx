@@ -111,14 +111,13 @@ export const Hero = () => {
         }} transition={{
           duration: 1,
           delay: 0.6
-        }} className="relative flex-shrink-0">
-            <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
-              <motion.img alt="Deepesh Kumar - Graphic Designer" className="w-full h-full object-cover object-top rounded-full" whileHover={{
+        }} className="relative flex-shrink-0 order-first lg:order-last mb-8 lg:mb-0">
+            <div className="relative w-40 h-40 sm:w-52 sm:h-52 md:w-64 md:h-64 lg:w-80 lg:h-80 xl:w-96 xl:h-96">
+              <motion.img alt="Deepesh Kumar - Graphic Designer" className="w-full h-full object-cover object-top rounded-full shadow-2xl" whileHover={{
               scale: 1.05
             }} transition={{
               duration: 0.5
             }} src="/lovable-uploads/7bd7a11b-bb39-4dad-a854-b482b08f7915.png" />
-              
             </div>
           </motion.div>
         </div>

@@ -5,7 +5,6 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: '/scroll-magic-portfolio/',
   server: {
     host: "::",
     port: 8080,

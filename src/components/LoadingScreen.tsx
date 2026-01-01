@@ -1,5 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
+import { Sparkles, Star, Circle, Triangle, Square } from "lucide-react";
 
 interface LoadingScreenProps {
   onLoadingComplete: () => void;
@@ -27,7 +28,13 @@ export const LoadingScreen = ({ onLoadingComplete }: LoadingScreenProps) => {
     return () => clearInterval(interval);
   }, [onLoadingComplete]);
 
-  const letters = "DEEPESH".split("");
+  const symbols = [
+    { Icon: Star, delay: 0 },
+    { Icon: Circle, delay: 0.1 },
+    { Icon: Triangle, delay: 0.2 },
+    { Icon: Square, delay: 0.3 },
+    { Icon: Sparkles, delay: 0.4 },
+  ];
 
   return (
     <AnimatePresence>
@@ -37,22 +44,38 @@ export const LoadingScreen = ({ onLoadingComplete }: LoadingScreenProps) => {
           exit={{ opacity: 0 }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
         >
-          {/* Animated Name */}
-          <div className="flex overflow-hidden mb-8">
-            {letters.map((letter, i) => (
-              <motion.span
+          {/* Hopping Symbols */}
+          <div className="flex gap-4 mb-8">
+            {symbols.map(({ Icon, delay }, i) => (
+              <motion.div
                 key={i}
-                initial={{ y: 100, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{
-                  duration: 0.8,
-                  delay: i * 0.1,
-                  ease: [0.16, 1, 0.3, 1],
+                initial={{ y: 0, opacity: 0 }}
+                animate={{ 
+                  y: [0, -20, 0],
+                  opacity: 1,
+                  rotate: [0, 10, -10, 0],
                 }}
-                className="text-5xl md:text-7xl font-display font-medium tracking-tight"
+                transition={{
+                  y: {
+                    duration: 0.6,
+                    repeat: Infinity,
+                    delay: delay,
+                    ease: "easeInOut",
+                  },
+                  rotate: {
+                    duration: 0.6,
+                    repeat: Infinity,
+                    delay: delay,
+                    ease: "easeInOut",
+                  },
+                  opacity: {
+                    duration: 0.3,
+                    delay: delay,
+                  },
+                }}
               >
-                {letter}
-              </motion.span>
+                <Icon className="w-6 h-6 text-foreground" strokeWidth={1.5} />
+              </motion.div>
             ))}
           </div>
 
@@ -75,32 +98,6 @@ export const LoadingScreen = ({ onLoadingComplete }: LoadingScreenProps) => {
           >
             {Math.min(Math.round(progress), 100)}%
           </motion.p>
-
-          {/* Decorative Elements */}
-          <motion.div
-            className="absolute top-1/4 left-1/4 w-32 h-32 border border-border/10 rounded-full"
-            animate={{
-              scale: [1, 1.2, 1],
-              rotate: [0, 180, 360],
-            }}
-            transition={{
-              duration: 8,
-              repeat: Infinity,
-              ease: "linear",
-            }}
-          />
-          <motion.div
-            className="absolute bottom-1/4 right-1/4 w-24 h-24 border border-border/10"
-            animate={{
-              scale: [1, 1.1, 1],
-              rotate: [0, -90, 0],
-            }}
-            transition={{
-              duration: 6,
-              repeat: Infinity,
-              ease: "linear",
-            }}
-          />
 
           {/* Exit Animation Overlay */}
           <motion.div

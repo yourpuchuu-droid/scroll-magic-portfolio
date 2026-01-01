@@ -3,11 +3,11 @@ import { ArrowDown } from "lucide-react";
 import heroImage from "@/assets/hero-image.png";
 import { MagneticButton } from "./animations";
 export const Hero = () => {
-  return <section id="home" className="relative min-h-screen flex flex-col justify-center px-6 lg:px-12 pt-24 overflow-hidden">
+  return <section id="home" className="relative min-h-screen flex flex-col justify-center px-4 sm:px-6 lg:px-12 pt-20 sm:pt-24 overflow-hidden">
       
       <div className="container mx-auto relative z-10">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
-          <div className="max-w-3xl lg:max-w-2xl">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
+          <div className="max-w-3xl lg:max-w-2xl text-center lg:text-left">
             <motion.p initial={{
             opacity: 0,
             y: 20
@@ -17,7 +17,7 @@ export const Hero = () => {
           }} transition={{
             duration: 0.8,
             delay: 0.2
-          }} className="text-muted-foreground text-sm md:text-base tracking-widest uppercase mb-6">
+          }} className="text-muted-foreground text-xs sm:text-sm md:text-base tracking-widest uppercase mb-4 sm:mb-6">
               Graphics Designer & Visual Communication Specialist
             </motion.p>
 
@@ -30,7 +30,7 @@ export const Hero = () => {
               duration: 1,
               ease: [0.16, 1, 0.3, 1],
               delay: 0.3
-            }} className="text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-display font-medium leading-[0.9] tracking-tight">
+            }} className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-display font-medium leading-[0.9] tracking-tight">
                 <motion.span className="inline-block" whileHover={{
                 scale: 1.02,
                 x: 10
@@ -51,7 +51,7 @@ export const Hero = () => {
               duration: 1,
               ease: [0.16, 1, 0.3, 1],
               delay: 0.4
-            }} className="text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-display font-medium leading-[0.9] tracking-tight text-stroke">
+            }} className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-display font-medium leading-[0.9] tracking-tight text-stroke">
                 <motion.span className="inline-block" whileHover={{
                 scale: 1.02,
                 x: 10
@@ -72,7 +72,7 @@ export const Hero = () => {
               duration: 1,
               ease: [0.16, 1, 0.3, 1],
               delay: 0.5
-            }} className="text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-display font-medium leading-[0.9] tracking-tight">
+            }} className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-display font-medium leading-[0.9] tracking-tight">
                 <motion.span className="inline-block bg-gradient-to-r from-foreground via-primary to-foreground bg-[length:200%_100%] bg-clip-text" animate={{
                 backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"]
               }} transition={{
@@ -97,7 +97,7 @@ export const Hero = () => {
           }} transition={{
             duration: 0.8,
             delay: 0.8
-          }} className="mt-12 max-w-md text-muted-foreground text-lg leading-relaxed">
+          }} className="mt-8 sm:mt-12 max-w-md mx-auto lg:mx-0 text-muted-foreground text-base sm:text-lg leading-relaxed">
               Creating impactful, high-quality visuals for web and print. Specializing in brand identity, social media layouts, motion graphics, and design systems. Based in Jaipur, Rajasthan.
             </motion.p>
           </div>

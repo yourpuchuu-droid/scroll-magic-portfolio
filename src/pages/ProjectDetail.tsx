@@ -30,7 +30,7 @@ const ProjectDetail = () => {
         <Cursor />
         <Navigation />
 
-        <main className="pt-32 pb-20 px-6 lg:px-12">
+        <main className="pt-24 sm:pt-32 pb-16 sm:pb-20 px-4 sm:px-6 lg:px-12">
           <div className="container mx-auto">
             {/* Back Button */}
             <motion.div
@@ -40,7 +40,7 @@ const ProjectDetail = () => {
             >
               <Link
                 to="/#portfolio"
-                className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-12"
+                className="inline-flex items-center gap-2 text-sm sm:text-base text-muted-foreground hover:text-foreground transition-colors mb-8 sm:mb-12"
               >
                 <ArrowLeft className="w-4 h-4" />
                 <span>Back to Portfolio</span>
@@ -48,12 +48,12 @@ const ProjectDetail = () => {
             </motion.div>
 
             {/* Project Header */}
-            <div className="mb-16">
+            <div className="mb-10 sm:mb-16">
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
-                className="text-muted-foreground text-sm tracking-widest uppercase mb-4"
+                className="text-muted-foreground text-xs sm:text-sm tracking-widest uppercase mb-3 sm:mb-4"
               >
                 {project.category}
               </motion.p>
@@ -63,7 +63,7 @@ const ProjectDetail = () => {
                   initial={{ y: 100 }}
                   animate={{ y: 0 }}
                   transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-                  className="text-4xl md:text-6xl lg:text-7xl font-display font-medium tracking-tight"
+                  className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-display font-medium tracking-tight"
                 >
                   {project.title}
                 </motion.h1>
@@ -73,14 +73,14 @@ const ProjectDetail = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.3 }}
-                className="mt-6 text-muted-foreground max-w-2xl text-lg"
+                className="mt-4 sm:mt-6 text-muted-foreground max-w-2xl text-base sm:text-lg"
               >
                 {project.description}
               </motion.p>
             </div>
 
             {/* Project Images Gallery */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
               {project.images.map((image, index) => (
                 <motion.div
                   key={index}

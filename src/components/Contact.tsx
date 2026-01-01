@@ -64,13 +64,24 @@ export const Contact = () => {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.5 }}
               className="mt-16"
+              data-cursor="email"
             >
               <a
                 href="mailto:Deepeshdesignss@gmail.com"
                 className="group inline-flex items-center gap-4 text-xl md:text-2xl lg:text-3xl border-b border-background/30 pb-2 hover:border-background transition-colors duration-300"
               >
-                Deepeshdesignss@gmail.com
-                <ArrowUpRight className="w-6 h-6 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
+                <motion.span
+                  whileHover={{ x: 10 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  Deepeshdesignss@gmail.com
+                </motion.span>
+                <motion.div
+                  whileHover={{ x: 5, y: -5, rotate: 45 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <ArrowUpRight className="w-6 h-6" />
+                </motion.div>
               </a>
             </motion.div>
 

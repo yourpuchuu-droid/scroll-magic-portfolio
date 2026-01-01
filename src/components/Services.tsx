@@ -96,7 +96,11 @@ const ServiceItem = ({ number, title, description, index }: ServiceItemProps) =>
         {/* Number */}
         <motion.span
           className="col-span-2 lg:col-span-1 font-mono text-sm text-muted-foreground"
-          animate={{ x: isHovered ? 10 : 0 }}
+          animate={{ 
+            x: isHovered ? 10 : 0,
+            scale: isHovered ? 1.2 : 1,
+            color: isHovered ? "hsl(var(--primary))" : "hsl(var(--muted-foreground))",
+          }}
           transition={{ duration: 0.3 }}
         >
           {number}
@@ -105,16 +109,38 @@ const ServiceItem = ({ number, title, description, index }: ServiceItemProps) =>
         {/* Title */}
         <motion.h3
           className="col-span-10 lg:col-span-4 text-2xl md:text-3xl lg:text-4xl font-display font-medium tracking-tight"
-          animate={{ x: isHovered ? 20 : 0 }}
+          animate={{ 
+            x: isHovered ? 20 : 0,
+            letterSpacing: isHovered ? "0.02em" : "0em",
+          }}
           transition={{ duration: 0.4 }}
         >
-          {title}
+          {title.split("").map((char, i) => (
+            <motion.span
+              key={i}
+              className="inline-block"
+              animate={{
+                y: isHovered ? [0, -3, 0] : 0,
+              }}
+              transition={{
+                duration: 0.3,
+                delay: i * 0.02,
+                ease: [0.16, 1, 0.3, 1],
+              }}
+            >
+              {char === " " ? "\u00A0" : char}
+            </motion.span>
+          ))}
         </motion.h3>
 
         {/* Description */}
         <motion.p
           className="col-span-12 lg:col-span-5 text-muted-foreground mt-4 lg:mt-0 lg:pl-6"
-          animate={{ opacity: isHovered ? 1 : 0.7 }}
+          animate={{ 
+            opacity: isHovered ? 1 : 0.7,
+            x: isHovered ? 10 : 0,
+            filter: isHovered ? "blur(0px)" : "blur(0.5px)",
+          }}
           transition={{ duration: 0.3 }}
         >
           {description}
@@ -123,12 +149,24 @@ const ServiceItem = ({ number, title, description, index }: ServiceItemProps) =>
         {/* Arrow */}
         <motion.div
           className="hidden lg:flex col-span-2 justify-end"
-          animate={{ x: isHovered ? 10 : 0, opacity: isHovered ? 1 : 0 }}
+          animate={{ 
+            x: isHovered ? 10 : 0, 
+            opacity: isHovered ? 1 : 0,
+            rotate: isHovered ? 45 : 0,
+          }}
           transition={{ duration: 0.3 }}
         >
           <ArrowUpRight className="w-6 h-6" />
         </motion.div>
       </div>
+      
+      {/* Progress line animation */}
+      <motion.div
+        className="h-px bg-primary mt-8 lg:mt-12 origin-left"
+        initial={{ scaleX: 0 }}
+        animate={{ scaleX: isHovered ? 1 : 0 }}
+        transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+      />
     </motion.div>
   );
 };

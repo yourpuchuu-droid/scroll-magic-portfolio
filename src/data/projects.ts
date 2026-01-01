@@ -21,6 +21,9 @@ import logoMockup3 from "@/assets/logo-mockup-3.png";
 import logoMockup4 from "@/assets/logo-mockup-4.png";
 import logoMockup5 from "@/assets/logo-mockup-5.png";
 
+import dairy1 from "@/assets/dairy-1.jpg";
+import dairy2 from "@/assets/dairy-2.png";
+
 export interface Project {
   slug: string;
   title: string;
@@ -57,5 +60,14 @@ export const projects: Project[] = [
       "A sophisticated brand identity for a luxury beauty salon featuring an elegant gold logo with graceful flowing lines. The design includes premium signage mockups, embossed stationery, and cohesive brand applications that exude refinement and exclusivity.",
     image: logoMockup1,
     images: [logoMockup1, logoMockup2, logoMockup3, logoMockup4, logoMockup5],
+  },
+  {
+    slug: "milk-meadows-branding",
+    title: "Milk & Meadows",
+    category: "Marketing & Social Media",
+    description:
+      "A comprehensive marketing design package for an organic dairy brand specializing in A2 Gir Cow milk and traditional Bilona Ghee. The designs feature a rich teal and gold color palette with elegant typography, showcasing premium product photography and authentic brand storytelling.",
+    image: dairy1,
+    images: [dairy1, dairy2],
   },
 ];

@@ -43,7 +43,7 @@ export const Portfolio = () => {
         </div>
 
         {/* Projects List */}
-        <div className="space-y-0">
+        <div className="space-y-0" data-cursor="view">
           {projects.map((project, index) => (
             <ProjectCard
               key={project.slug}

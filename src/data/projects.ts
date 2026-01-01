@@ -24,6 +24,8 @@ import logoMockup5 from "@/assets/logo-mockup-5.png";
 import dairy1 from "@/assets/dairy-1.jpg";
 import dairy2 from "@/assets/dairy-2.png";
 
+import stationery1 from "@/assets/stationery-1.png";
+
 export interface Project {
   slug: string;
   title: string;
@@ -69,5 +71,14 @@ export const projects: Project[] = [
       "A comprehensive marketing design package for an organic dairy brand specializing in A2 Gir Cow milk and traditional Bilona Ghee. The designs feature a rich teal and gold color palette with elegant typography, showcasing premium product photography and authentic brand storytelling.",
     image: dairy1,
     images: [dairy1, dairy2],
+  },
+  {
+    slug: "milk-meadows-stationery",
+    title: "Milk & Meadows Stationery",
+    category: "Corporate Identity",
+    description:
+      "A cohesive corporate stationery design for the Milk & Meadows dairy brand featuring elegant letterhead with a soft pink watermark logo. The minimalist design combines coral accents with clean typography for a professional yet approachable brand presence.",
+    image: stationery1,
+    images: [stationery1],
   },
 ];

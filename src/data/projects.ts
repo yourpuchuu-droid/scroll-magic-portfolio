@@ -15,6 +15,12 @@ import yoga8 from "@/assets/yoga-8.jpg";
 import yoga9 from "@/assets/yoga-9.jpg";
 import yoga10 from "@/assets/yoga-10.jpg";
 
+import logoMockup1 from "@/assets/logo-mockup-1.png";
+import logoMockup2 from "@/assets/logo-mockup-2.png";
+import logoMockup3 from "@/assets/logo-mockup-3.png";
+import logoMockup4 from "@/assets/logo-mockup-4.png";
+import logoMockup5 from "@/assets/logo-mockup-5.png";
+
 export interface Project {
   slug: string;
   title: string;
@@ -42,5 +48,14 @@ export const projects: Project[] = [
       "A modern and dynamic flyer design for yoga classes featuring bold typography, organic curved shapes, and striking imagery. The dark color palette with white accents creates a calming yet professional aesthetic perfect for wellness brands.",
     image: yoga1,
     images: [yoga1, yoga2, yoga3, yoga4, yoga5, yoga6, yoga7, yoga8, yoga9, yoga10],
+  },
+  {
+    slug: "luxe-beauty-branding",
+    title: "Luxe Beauty Branding",
+    category: "Logo & Brand Identity",
+    description:
+      "A sophisticated brand identity for a luxury beauty salon featuring an elegant gold logo with graceful flowing lines. The design includes premium signage mockups, embossed stationery, and cohesive brand applications that exude refinement and exclusivity.",
+    image: logoMockup1,
+    images: [logoMockup1, logoMockup2, logoMockup3, logoMockup4, logoMockup5],
   },
 ];
